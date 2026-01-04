@@ -1,14 +1,14 @@
+import { useTranslation } from "react-i18next";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <footer id="contact" className="bg-black text-white py-16">
       <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
-        <h2 className="text-3xl font-bold mb-6">ร่วมงานกับผม</h2>
+        <h2 className="text-3xl font-bold mb-6">{t("contact.title")}</h2>
         <p className="text-gray-400 mb-10 max-w-xl mx-auto">
-          หากคุณกำลังมองหา Web Developer เพื่อร่วมสร้างโปรเจกต์
-          หรือต้องการพูดคุยแลกเปลี่ยนความคิดเห็น
-          สามารถติดต่อผมได้ตามช่องทางด้านล่างนี้
+          {t("contact.description")}
         </p>
 
         <div className="flex justify-center gap-6 mb-12">

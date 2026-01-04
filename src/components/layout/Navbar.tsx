@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Code2, Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -14,10 +16,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "เกี่ยวกับ", href: "#about" },
-    { name: "ทักษะ", href: "#skills" },
-    { name: "ผลงาน", href: "#projects" },
-    { name: "ติดต่อ", href: "#contact" },
+    { name: t("navbar.about"), href: "#about" },
+    { name: t("navbar.skills"), href: "#skills" },
+    { name: t("navbar.projects"), href: "#projects" },
+    { name: t("navbar.contact"), href: "#contact" },
   ];
 
   return (
@@ -34,7 +36,7 @@ export default function Navbar() {
           className="text-xl font-bold tracking-tighter text-black flex items-center gap-2"
         >
           <Code2 className="w-6 h-6" />
-          <span>DEV.PORTFOLIO</span>
+          <span>{t("navbar.brand")}</span>
         </a>
 
         {/* Desktop Menu */}

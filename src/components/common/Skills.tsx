@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import TechBadge from "./TechBadge";
 interface Skill {
   category: string;
@@ -17,17 +18,18 @@ const skills: Skill[] = [
 ];
 
 export default function Skills() {
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="py-20 bg-gray-50 border-y border-gray-200">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row md:items-start gap-12 max-w-6xl mx-auto">
           <div className="md:w-1/3">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Technical Skills
+              {t("skills.title")}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              เครื่องมือและเทคโนโลยีที่ผมเลือกใช้เพื่อสร้างสรรค์ผลงานที่มีคุณภาพ
-              สูงสุด ทั้งในด้านประสิทธิภาพและการดูแลรักษา
+              {t("skills.description")}
             </p>
           </div>
 

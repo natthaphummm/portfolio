@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Github, ExternalLink, Code2 } from "lucide-react";
 import TechBadge from "./TechBadge";
 
@@ -40,16 +41,16 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            Featured Projects
+            {t("projects.title")}
           </h2>
-          <p className="text-gray-600">
-            ผลงานที่ผ่านมาบางส่วนที่ผมภูมิใจนำเสนอ
-          </p>
+          <p className="text-gray-600">{t("projects.description")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -84,13 +85,13 @@ export default function Projects() {
                       href={project.repoLink}
                       className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-black transition-colors"
                     >
-                      <Github className="w-4 h-4" /> Code
+                      <Github className="w-4 h-4" /> {t("projects.code")}
                     </a>
                     <a
                       href={project.demoLink}
                       className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-black transition-colors"
                     >
-                      <ExternalLink className="w-4 h-4" /> Live Demo
+                      <ExternalLink className="w-4 h-4" /> {t("projects.demo")}
                     </a>
                   </div>
                 </div>
