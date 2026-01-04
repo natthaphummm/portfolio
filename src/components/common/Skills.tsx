@@ -21,33 +21,27 @@ export default function Skills() {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 border-y border-gray-200">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row md:items-start gap-12 max-w-6xl mx-auto">
-          <div className="md:w-1/3">
-            <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              {t("skills.title")}
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              {t("skills.description")}
-            </p>
+    <section id="skills" className="mb-16 scroll-mt-24">
+      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+        <span className="w-8 h-1 bg-gray-900 dark:bg-white rounded-full"></span>
+        {t("skills.title")}
+      </h3>
+      <div className="grid gap-6 md:grid-cols-2">
+        {skills.map((skillGroup) => (
+          <div
+            key={skillGroup.category}
+            className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700 transition-colors duration-300"
+          >
+            <h4 className="text-md font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              {skillGroup.category}
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {skillGroup.items.map((item) => (
+                <TechBadge key={item} name={item} />
+              ))}
+            </div>
           </div>
-
-          <div className="md:w-2/3 grid gap-8 sm:grid-cols-2">
-            {skills.map((skillGroup) => (
-              <div key={skillGroup.category} className="space-y-4">
-                <h3 className="text-lg font-semibold text-black border-l-4 border-gray-300 pl-3">
-                  {skillGroup.category}
-                </h3>
-                <div className="flex flex-wrap gap-3">
-                  {skillGroup.items.map((item) => (
-                    <TechBadge key={item} name={item} />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -3,27 +3,21 @@
     "brand": "Natthaphum Phusong",
     "about": "About",
     "skills": "Skill",
-    "projects": "Projects",
-    "contact": "Contact"
+    "projects": "Projects"
   },
-  "hero": {
+  "project": {
     "name": "Natthaphum Phusong",
+    "job": "Web Developer",
     "description": "I'm a web developer passionate about creating beautiful and user-friendly websites. With experience in React and Modern UI, I'm here to help elevate your business.",
-    "resume": "Download Resume",
-    "contact": "Contact Me"
+    "location": "Kamphaeng Phet, Thailand",
+    "resume": "Download Resume"
   },
   "skills": {
-    "title": "Technical Skills",
-    "description": "The tools and technologies I choose to use are to create the highest quality work, both in terms of performance and maintenance."
+    "title": "Technical Skills"
   },
   "projects": {
     "title": "Featured Projects",
-    "description": "Some of my past projects that I am proud to present.",
     "demo": "Live Demo",
     "code": "Code"
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "If you are looking for a Web Developer to collaborate on a project with or want to discuss and exchange ideas, you can contact me through the channels below."
   }
 }
