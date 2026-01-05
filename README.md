@@ -2,7 +2,7 @@
 
 > เว็บไซต์ Portfolio ส่วนตัวสำหรับรวบรวมผลงานและ Certificate
 
-เข้าชมเว็บไซต์ได้ที่: soon
+เข้าชมเว็บไซต์ได้ที่: https://natthaphummm.github.io/portfolio/
 
 ## Tech Stack
 
