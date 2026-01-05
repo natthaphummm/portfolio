@@ -46,7 +46,7 @@ export default function ThemeToggle() {
     <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full p-1 shadow-inner">
       <button
         onClick={() => changeTheme("light")}
-        className={`p-1.5 rounded-full transition-all hover:scale-110 ${
+        className={`p-1.5 rounded-full cursor-pointer transition-all hover:scale-110 ${
           isLight
             ? "bg-white shadow-sm text-gray-700 dark:text-gray-700"
             : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
@@ -59,7 +59,7 @@ export default function ThemeToggle() {
 
       <button
         onClick={() => changeTheme("dark")}
-        className={`p-1.5 rounded-full transition-all hover:scale-110 ${
+        className={`p-1.5 rounded-full cursor-pointer transition-all hover:scale-110 ${
           isDark
             ? "bg-gray-700 shadow-sm text-gray-100"
             : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
