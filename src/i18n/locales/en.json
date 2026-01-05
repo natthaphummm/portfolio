@@ -7,8 +7,8 @@
   },
   "project": {
     "name": "Natthaphum Phusong",
-    "job": "Web Developer",
-    "description": "I'm a web developer passionate about creating beautiful and user-friendly websites. With experience in React and Modern UI, I'm here to help elevate your business.",
+    "job": "Junior Web Developer",
+    "description": "I am a Junior Web Developer who enjoys building web applications through hands-on experience. I am eager to learn, collaborate with others, and continuously grow in my development skills.",
     "location": "Kamphaeng Phet, Thailand",
     "resume": "Download Resume"
   },
@@ -16,7 +16,7 @@
     "title": "Technical Skills"
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Projects",
     "demo": "Live Demo",
     "code": "Code"
   }
